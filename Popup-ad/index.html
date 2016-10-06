@@ -1,0 +1,96 @@
+<!--tbk Creative task-->
+<!--Programmer: Moh Khomeiri-->
+<!--Date: Sep 21 2016-->
+
+
+<!DOCTYPE html>
+    <html lang="en-us">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="cookie.js"></script>
+        <link rel="stylesheet" href="style.css">
+    <script>
+        if (!Cookies.get('popup')) {
+            setTimeout(function() {
+                $('#myModal').modal();
+            }, 3000);
+            Cookies.set('popup', 'valid', { expires: 3, path: "/" }); // need to set the path to fix a FF bug
+        }
+    </script>
+    </head>
+    <body>
+        <div class="container">
+            <h3>Please wait for 3 seconds for Popup.</h3>
+            <p>If the popup showed up already, it will not showing up automatically anymore. (you can delete your recent cookie for popup to show up automatically after 3 seconds)<br>Please click in this button if you would like to see the popup manually.</p><br>
+            <!-- Trigger the modal with a button -->
+            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Popup</button><br><br>
+
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" role="dialog" tabindex="-1">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                            <div class="row">
+                                <h3 class="firstp">you are cordially invited<br>to the launch</h3>
+                                <h3 id="ofThe">of the</h3>
+                                <h1 class="secondp">new<br><span class="red">company</span><br>website</h1><br>
+                                <h3 class="thirdp">Lorem ipsum dolor sit amet, vix suas liber conclusionemque eu. Ad quo esse<br>purto eros, benore volutpat ut quo, copiosae concludaturque nam in.</h3><br>
+                                <hr><br>
+                                <h3 class="firstp">ad est odio noster:</h3>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-offset-2 col-md-6 col-md-offset-2 col-lg-offset-2">
+                                    <ul class="unorderedList">
+                                        <li>Ex vis amet graeci accumsan</li>
+                                        <li>Civibus iracundia quo ad</li>
+                                        <li>Eu impetus feugiat civibus qui</li>
+                                        <li>Mel in mucius argumentum, ab accumsan petentium vim</li>
+                                        <li>Vim at rationibus interesset</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <br>
+                            <footer id="foot">
+                                <div id="lineHeight">
+                                    <h1 id="headerInFooter">get your foot in the door.</h1>
+                                    <h3 class="sentenceInFooter">Know the moment our new website goes live.</h3>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col-xs-8 col-xs-offset-2 col-sm-3 col-sm-offset-3 col-lg-3 col-lg-offset-2">
+                                        <input type="text" name="name" id="name" class="styleTxtField" placeholder="Name">
+                                    </div>
+                                    <div class="col-xs-8 col-xs-offset-2 col-sm-3 col-sm-offset-0 col-lg-3">
+                                        <input type="email" name="email" id="email" class="styleTxtField" placeholder="Email">
+                                    </div>
+                                    <div class="col-xs-6 col-xs-offset-3 col-sm-2 col-sm-offset-0">
+                                        <input type="submit" id="submit" value="submit"><br>
+                                    </div>
+                                </div>
+                                <div class="check">
+                                    <input type="checkbox" name="checkbox" id="checkbox">&nbsp; Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec adio. Quisque<br>volutpat maltis eros. Nullam malesuada atat ut turois. Suspendisse urnanibh,<br>viverra non, senper suscipit, posuere a, pede.
+                                    <br><br><br>
+                                </div>
+                            </footer>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>
